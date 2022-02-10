@@ -1,580 +1,179 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>latihan 3</title>
-
+        <title>latihan 2</title>
         <style>
-
-        .kotakluar {
-        position: relative;
-        width: 500px;
-        height: 500px;
-        background-color: transparent;
-        display: block;
-        margin-top: 300px;
-        margin-left: 800px;
-        margin-right: auto;
-        background-color: transparent;
-        }
-
-        .baris {
-        position: relative;
-        width: 100%;
-        height: 70px;
-        display: block;
-        margin-bottom: 5px;
-        background-color: transparent;
-        }
-
-        .barisjudul {
-        position: relative;
-        width: 100%;
-        height: 70px;
-        display: block;
-        margin-top: 0px;
-        margin-bottom: 15px;
-        background-color: transparent;
-        }
-
-        .notif {
-       position: absolute;
-       right: 0px;
-       top: -80px;
-       width: 250px;
-       height: 120px;
-       display: block;
-       background-color: rgb(183, 132, 218);
-       border-radius: 10px;
-    }
-        .kotaknotif {
-        position:relative;
-        margin-top: 30px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-        }
-
-        .judul {
-        position: relative;
-        width: 100%;
-        height: 50%;
-        padding-top: 30px;
-        margin-bottom: 20px;
-        background-color: transparent;
-        }
-
-        .colangka {
-        position: relative;
-        float: left;
-        width: 20%;
-        height: 100%;
-        margin-bottom:0px;
-        margin-top: 0px;
-        display: block;
-        background-color: transparent;
-        }
-
-        .kotakangka {
-        position:relative;
-        width: 100%;
-        height: 50%;
-        margin-left: 0px;
-        margin-top: 14px;
-        margin-bottom: 0px;
-        padding: 0px;
-        background-color: transparent;
-        }
-
-        .colket {
-        position: relative;
-        float: left;
-        width: 60%;
-        height: 100%;
-        margin-bottom:0px;
-        display: block;
-        background-color: transparent;
-        }
-
-        .kotaktulis {
-        width: 70%;
-        height: 70%;
-        margin-top: 15px;
-        display: block;
-        background-color: transparent;
-        }
-
-        .colsimbol {
-        position: relative;
-        float: left;
-        width: 20%;
-        height: 100%;
-        margin-bottom:0px;
-        display: block;
-        background-color: transparent;    
-        }
-
-        .simbol {
-        position: relative;
-        width: 45px;
-        height: 45px;
-        display: block;
-        background-color: rgb(57, 126, 255);
-        margin-top: 20px;
-        margin-left: 55px;
-        margin-bottom: 30px;
-        }
-
-        .garisbawah {
-        width: 500px;
-        height: 3px;
-        position: relative
-        display: block;
-        background-color: rgb(125, 163, 235);
-        }
-
-        h1 {
-            font-family: Arial;
-            font-size: 30pt;
-            font-style: normal;
-            margin-top: 0px;
-            margin-bottom: 0pt;
-        }
-
-        h2 {
-            font-family: Arial;
-            font-weight: bolder;
-            font-size: 14pt;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-
-        h3 {
-            font-family: Arial;
-            font-weight: normal;
-            font-size: 14pt;
-            margin: 0px;
-            font-kerning: 2px;
-        }
-
-        h4 {
-            font-family: Arial;
-            font-size: 24pt;
-            font-style: normal;
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
-
-        .angkadiatas {
-            position: absolute;
-            width: 300px;
-            height: 500px;
-            margin-top: -460px;
-            margin-left: -70px;
-            right: -50;
-        }
-
-        .bustime {
-            position: absolute;
-            width: 300px;
-            height: 400px;
-            margin-top: -450px;
-            margin-left: -20px;
-          padding-top: 20px;
-        }
-
-
-    h6 {
-    background-color: rgb(97, 97, 102);
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-    margin-left:120px;
-    height:55px;
-    width: 40%;
-    font-family: sans-serif;
-    margin-bottom:8px;
-}
-
-.bagiankanan {
-    width: 38%;
-    float: right;
-    padding-right: -100px;
-    margin-top: -200px;
-    margin-left: -80px;
-    margin-right: 20px;
-}
-.angka{
-    width: 100%;
-    float: left;
-    margin-top: -20px;
-    right: -30px;
-}
-
-
-h5{
-    text-align: center;
-    padding-left: 20px;
-    padding-top: 40px;
-    font-size: 200px;
-    color: rgb(0, 0, 0);
-    margin-left:80px;
-    margin-right: 310px;
-    height:55px;
-    width: 70%;
-    font-family: sans-serif;
-    margin-bottom:8px;
-    position: relative;
-    margin-top: 40px;
-}
-
-p {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-.row1 {
-    float: left;
-    width:60%;
-    height:90px;
-    margin-left: 0px;
-}
-
-
-.column {
-    float: left;
-    height: 90px;
-    width: 90px;
-    font-family: sans-serif;
-    margin: 1px;
-    background-color: rgb(97, 97, 102);
-    color: rgb(255, 255, 255);
-    margin-left: 170px;
-    padding-left: 10px;
-    font-size: 15px;
-
-  }
-  .column1{
-    float: left;
-    height: 90px;
-    width: 326px;
-    font-family: sans-serif;
-    margin: 1px;
-    background-color: rgb(97, 97, 102);
-    color: rgb(255, 255, 255);
-    padding-left: 10px;
-    margin-left:1px;
-    font-size: 15px;
-  }
-  .row2{
-    width: 60%;
-  }
-.baris3 {
-    float: left;
-    height: 90px;
-    width: 100px;
-    font-family: sans-serif;
-    margin: 1px;
-    background-color: rgb(97, 97, 102);
-    color: rgb(255, 255, 255);
-    margin-left:1px;
-    font-size: 15px;
-    text-align: center;
-}
-.column4{
-    float: left;
-    height: 120px;
-    width: 90px;
-    font-family: sans-serif;
-    margin: 1px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    margin-left: 170px;
-    padding-left: 10px;
-    font-size: 17px;
-    outline-style: solid;
-    outline-width:0.5px ;
-    outline-color:black ;
-}
-.column5{
-    float: left;
-    height: 120px;
-    width: 326px;
-    font-family: sans-serif;
-    margin: 1px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding-left: 10px;
-    margin-left:1px;
-    font-size: 15px;
-    outline-style: solid;
-    outline-width:0.5px ;
-    outline-color:black ;
-}
-.column6{
-    float: left;
-    height: 120px;
-    width: 99.7px;
-    font-family: sans-serif;
-    margin: 1px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    margin-left:1px;
-    font-size: 15px;
-    text-align: center;
-    outline-style: solid;
-    outline-width:0.5px ;
-    outline-color:black ;
-}
-.info{
-    float: left;
-    position: absolute;
-    padding-top: 0px;
-    width: 500px;
-    background-color: transparent;
-    margin-left: 170px;
-    top: 420px;
-}
-.kotakinfo1line{
-    background-color: transparent;
-    height: 40px;
-    margin-bottom: 5px;
-}
-
-.kotakinfo2line {
-    background-color: transparent;
-    height: 50px;
-    margin-bottom: 5px;
-    margin-left: 30;
-}
-
-.kotakinfo3line {
-    background-color: transparent;
-    height: 80px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-.kotakinfo4line {
-    background-color: transparent;
-    height: 110px;
-    margin-top: 5px;
-}
-
-.kotakinfo
-  
-</style>
-
-<main>
-
-
-<h6>Stand Departure Information</h6>
-<div class="row1">
- <div class="column" >
-        <h2>Route No</h2>
-                </div>
- <div class="column1">
-        <h2>Location</h2>
-                </div>
- <div class="baris3">
-        <h2>Stand</h2>
-                </div>
-                </div>
- <div class="row2">
-    <div class="column4" >
-        <h2 class="kecil">
-            81,82<br>
-            83,84<br>
-            85<br>
-        </h2>
-                </div>
- <div class="column5">
-        <h2>Perth Busport</h2>
-                </div>
- <div class="column6">
-        <h2>9-12</h2>
-                </div>
-                <div></div>
- </div>
-
-
-        <div class="kotakluar">
-            <div class="notif">
-                <div class="kotaknotif">
-                    <h2>For full service details for these routes, refer to Timetable 43</h2>
-                </div>
-                <div class="bustime">
-                    <h1>Bus Timetable</h1>
-                </div>
-                <div class="angkadiatas">
-                    <h5>42</h5>
-                </div>
-            </div>
-
-            <div class="barisjudul">
-                <div class="judul">
-                    <h4>Routes</h4>
-                </div>
-            </div>
-
-            <div class="garisbawah"></div>
-
-
-            <div class="baris">
-                <div class="colangka">
-                    <div class="kotakangka">
-                        <h1>81</h1>
-                    </div>
-                </div>
-
-                <div class="colket">
-                    <div class="kotaktulis">
-                        <h2>Perth - Wembley</h2>
-                        <h3>via Cambridge St</h3>
-                    </div>
-                </div>
-                
-                <div class="colsimbol">
-                    <div class="simbol"></div>
-                </div>
-
-            </div>
-
-            <div class="baris">
-                <div class="colangka">
-                    <div class="kotakangka">
-                        <h1>82</h1>
-                    </div>
-                </div>
-
-                <div class="colket">
-                    <div class="kotaktulis">
-                        <h2>Perth - Wembley</h2>
-                        <h3>via Cambridge St</h3>
-                    </div>
-                </div>
-                
-                <div class="colsimbol">
-                    <div class="simbol"></div>
-                </div>
-
-            </div>
-
-
-            <div class="baris">
-                <div class="colangka">
-                    <div class="kotakangka">
-                        <h1>83</h1>
-                    </div>
-                </div>
-
-                <div class="colket">
-                    <div class="kotaktulis">
-                        <h2>Perth - Wembley</h2>
-                        <h3>via Cambridge St</h3>
-                    </div>
-                </div>
-                
-                <div class="colsimbol">
-                    <div class="simbol"></div>
-                </div>
-
-            </div>
-
-
-            <div class="baris">
-                <div class="colangka">
-                    <div class="kotakangka">
-                        <h1>84</h1>
-                    </div>
-                </div>
-
-                <div class="colket">
-                    <div class="kotaktulis">
-                        <h2>Perth - Wembley</h2>
-                        <h3>via Cambridge St</h3>
-                    </div>
-                </div>
-                
-                <div class="colsimbol">
-                    <div class="simbol"></div>
-                </div>
-
-
-            </div>
-
-            <div class="baris">
-                <div class="colangka">
-                    <div class="kotakangka">
-                        <h1>85</h1>
-                    </div>
-                </div>
-
-                <div class="colket">
-                    <div class="kotaktulis">
-                        <h2>Perth - Wembley</h2>
-                        <h3>via Cambridge St</h3>
-                    </div>
-                </div>
-                
-                <div class="colsimbol">
-                    <div class="simbol"></div>
-                </div>
-        </div>
-
-
-            </div>
-
-            <div class="info">
-                <div class="kotakinfo1line">
-                    <h1>Transperth</h1>
-                </div>
-                <div class="kotakinfo1line">
-                    <h1>Information</h1>
-                </div>
-                <div class="garisbawah"></div>
-
-                <div class="kotakinfo3line">
-                    <h2>Call us</h2>
-                    <p>InfoLine on 13 62 13<br>
-                        (TIS 13 1450)</p>
-                </div>
-
-                <div class="kotakinfo2line">
-                    <h2>Hearing or speech impaired?</h2>
-                    <p>call via NRS on 133 677</p>
-                </div>
-                
-                <div class="kotakinfo5line">
-                    <h2>Visit an InfoCentre at</h2>
-                    <p>
-                        - Elizabeth Quay Bus Station<br>
-                        - Perth Bussport<br>
-                        - Perth Station<br>
-                        - Perth Underground Station
-                    </p>
-                </div>
-
-                <div class="kotakinfo3line">
-                    <h2>Got an iPhone or Android device?</h2>
-                    <p>Download our free app now to help you plan<br>
-                    your journey.</p>
-                </div>
-
-                <div class="kotakinfo2line">
-                    <h2>Visit us online</h2>
-                    <p>transperth.wa.gov.au</p>
-                </div>
-            </div>
-
-
-    
-        
-
-        </main>
+            * {
+                margin: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .barissatu {
+                position: relative;
+                float: left;
+                margin: auto;
+                width: auto;
+                padding: 0%;
+            }
+
+            .barisdua {
+                position: relative;
+                float: left;
+                margin: auto;
+                width: auto;
+                padding: 0%;
+            }
+
+            .baristiga {
+                position: relative;
+                float: left;
+                margin: auto;
+                width: auto;
+                padding: 0%;
+            }
+
+            .barisempat {
+                position: relative;
+                margin: auto;
+                width: auto;
+                padding: 0%;
+            }
+
+            .pertama {
+                width: 150px;
+                height: 130px;
+                background-color: rgb(250, 199, 207);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+
+            .kedua {
+                width: 280px;
+                height: 130px;
+                background-color: rgb(243, 236, 139);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+
+            .ketiga {
+                width: 995px;
+                height: 130px;
+                background-color: rgb(142, 240, 183);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+
+            .keempat {
+                width: 260px;
+                height: 130px;
+                background-color: rgb(167, 180, 255);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+
+            .kelima {
+                width: 224px;
+                height: 130px;
+                background-color: rgb(167, 180, 255);
+                float: left;
+                display: block;
+                margin-right: 3px;
+                margin-bottom: 10px;
+            }
+
+            .kelimaujung {
+                width: 224px;
+                height: 130px;
+                background-color: rgb(167, 180, 255);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+
+            .keenam {
+                width: 290px;
+                height: 160px;
+                background-color: rgb(255, 167, 167);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+
+            .ketujuh {
+                width: 330px;
+                height: 120px;
+                background-color: rgb(255, 167, 167);
+                float: left;
+                display: block;
+                margin-top: 50px;
+                margin-bottom: 0px;
+            }
+
+            .kedelapan {
+                width: 297px;
+                height: 100px;
+                background-color: rgb(167, 242, 255);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 50px;
+            }
+
+            .kesembilan {
+                width: 260px;
+                height: 160px;
+                background-color:rgb(250, 199, 207);
+                float: left;
+                display: block;
+                margin-right: 8px;
+                margin-bottom: 10px;
+            }
+        </style>
 
 
     </head>
 
+    <body>
+    <div class="barissatu">
+        <div class="pertama"></div>
+        <div class="kedua"></div>
+        <div class="kedua"></div>
+        <div class="kedua"></div>
+        <div class="pertama"></div>
+    </div>
+
+    <div class="barisdua">
+        <div class="ketiga"></div>
+        <div class="keempat"></div>
+    </div>
+
+    <div class="baristiga">
+        <div class="kelima"></div>
+        <div class="kelima"></div>
+        <div class="kelima"></div>
+        <div class="kelimaujung"></div>
+        <div class="keempat"></div>
+    </div>
+
+    <div class="barisempat">
+        <div class="keenam"></div>
+        <div class="ketujuh"></div>
+        <div class="kedelapan"></div>
+        <div class="kesembilan"></div>
+    </div>
+
+    </body>
 
 </html>
