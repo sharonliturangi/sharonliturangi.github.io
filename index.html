@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sharon's Resume</title>
+        <style>
+            .box{
+                width: 1000px;
+                height: 600px;
+                padding: 10px 9px;
+                margin-top: 20px;
+                border: 1px solid rgb(153, 153, 153);
+            }
+            .tab{
+                padding: 6px 9px;
+                border: 1px solid rgb(153, 153, 153);
+                border-top: none;
+                float: left;
+            }
+
+            .isitext{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                margin-left: 40px;
+                margin-right: 40px;
+
+            }
+
+            .profilpic{
+                position: fixed;
+                width: 200px;
+                height: 200px;
+                margin-top: 30px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                border: 10px;
+                border-radius: 50%;
+            }
+
+            .studypic {
+                position: fixed;
+                width: 250px;
+                height:500px;
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .kotak{
+                position: relative;
+                width: 800;
+                height: 400px;
+                margin-top: 50px;
+                margin-left: 20px;
+                margin-right: 30px;
+                padding-top: 0px;
+                background-color: transparent;
+            }
+
+            .kotakatas {
+                position: relative;
+                float: left;
+                width: 600px;
+                height: 400px;
+                padding-top: 10px;
+                margin-left: 260px;
+                margin-top: 10px;
+            }
+
+            .kotakisi{
+                position: relative;
+                width: 450px;
+                height: 100px;
+                margin-left: 20px;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                padding-top: 10px;
+                padding-left: 0px;
+                background-color: rgb(255, 251, 196);
+                border: 10px;
+                border-radius: 10pt;
+            }
+
+            .kotakisi2{
+                position: fixed;
+                width: 450px;
+                height: 80px;
+                margin-left:0px;
+                margin-right: 30px;
+                margin-top: 50px;
+                padding-left:0px;
+                padding-top: 10px;
+                background-color: rgb(182, 255, 231);
+                border: 10px;
+                border-radius: 10pt;
+            }
+
+            .kotakisi3{
+                position: fixed;
+                width: 450px;
+                height: 100px;
+                margin-left:0px;
+                margin-right: 30px;
+                margin-top: 50px;
+                padding-left:0px;
+                padding-top: 10px;
+                background-color: rgb(245, 225, 255);
+                border: 10px;
+                border-radius: 10pt;
+            }
+
+            .judul {
+                font-size: 30pt;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 25px;
+            }
+
+            .paragraf{
+                font-size: 15px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 25px;
+            }
+
+            .abili{
+                font-size: 15px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+            }
+        </style>
+        <script>
+            var dataku = [
+                '<div class="kotak"><img class="profilpic" src="img/pfp.png"><div class="kotakatas"><h1 class="judul">Hello ~</h1><h2 class="paragraf">Hi there! My name is Sharon Liturangi. Im on illustrator and Graphic Designer based in Tangerang, Indonesia. I love all parts of the creative process and learning new skills. I work multitaskingly and always seek to improve myself. I have a good sense of team work, enjoy meeting, new people and taking on new challenges !</h2><div class="kotakisi"><h2 class="abili">Abilities :</h2><h2 class="abili">Adobe Illustrator, Adobe Photoshop, Adobe Indesign, Adobe After Effects, Adobe Lightroom</h2><div class="kotakisi2"><h2 class="abili">Language :</h2><h2 class="abili">Bahasa Indonesia, English, Korean</h2></div></div></div>',
+                '<div class="kotak"><img class="studypic" src="img/study.png"><div class="kotakatas"><h1 class="judul">Education</h1><h2 class="paragraf"> 2006 - 2012 : Sekolah Dian Harapan</h2><h2 class="paragraf"> 2012 - 2015 : Sekolah Dian Harapan</h2><h2 class="paragraf"> 2015 - 2018 : UPH College</h2><h2 class="paragraf"> 2018 - 2022 : Universitas Pelita Harapan</h2></div></div></div>',
+                '<div class="kotak"><img class="studypic" src="img/hobi.png"><div class="kotakatas"><h1 class="judul">Interest</h1><h2 class="paragraf">Beside learning new skills, i have two most of my favorite interest and hobbies that i have been doing and developing for the past years</h2><div class="kotakisi"><h2 class="abili">Content Creator :</h2><h2 class="abili">Actively in making content such as gameplay, make up, and cosplay in social media platforms</h2><div class="kotakisi3"><h2 class="abili">Video Games :</h2><h2 class="abili">Participating in the E-sports industry for 3 years to join competitive tournament and streaming</h2></div></div></div>',
+            ];
+        </script>
+    </head>
+    <body>
+        <div id="jon" class="box" onclick=""></div>
+        <div id="tab_satu" class="tab" onclick="ubahwarna ('pink', 'tab_satu', dataku[0])">About</div>
+        <div id="tab_dua" class="tab" onclick="ubahwarna ('bisque', 'tab_dua', dataku[1])">Education</div>
+        <div id="tab_tiga" class="tab" onclick="ubahwarna ('rgb(175, 216, 255', 'tab_tiga', dataku[2])">Interest</div>
+    </body>
+</html>
+
+<script>
+    function ubahwarna (x,y,z) {
+        document.querySelector('#jon').style.backgroundColor = x;
+        document.querySelector('#jon').innerHTML = z;
+        if (y == 'tab_satu'){
+            document.querySelector('#tab_satu').style.backgroundColor = 'lightgrey';
+            document.querySelector('#tab_dua').style.backgroundColor = 'white';
+            document.querySelector('#tab_tiga').style.backgroundColor = 'white';
+
+        }
+        else if (y == 'tab_dua'){
+            document.querySelector('#tab_satu').style.backgroundColor = 'white';
+            document.querySelector('#tab_dua').style.backgroundColor = 'lightgrey';
+            document.querySelector('#tab_tiga').style.backgroundColor = 'white';
+        }
+        else{
+            document.querySelector('#tab_satu').style.backgroundColor = 'white';
+            document.querySelector('#tab_dua').style.backgroundColor = 'white';
+            document.querySelector('#tab_tiga').style.backgroundColor = 'lightgrey';
+        }
+    }
+</script>
