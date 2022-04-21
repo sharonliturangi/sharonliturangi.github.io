@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Inbox</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inbox.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+
+<body>
+
+  <body>
+    <div class="topnav">
+      <div class="outlook"onclick="location.href='index.html'">OUTLOOK</div>
+      <div class="search">
+        <div class="searchtxt">Search</div>
+        <img class="filticon" src="img/tri.png" onclick="filter">
+      </div>
+      <div class="profile"></div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" id="logo_img">
+        <i class='bx bx-menu-alt-right' id="btn" ></i>
+      </div>
+  
+    <div class="sidebar.open">
+      <div class="profilecircle"></div>
+      <div class="listicon">
+        <h1 style="font-size: 15pt; margin-left: 20pt;">ILLUSTRASI</h1>
+        <h1 style="font-size: 8pt; margin-left: 20pt;">illustrasia@student.uph.edu</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 50px;"onclick="location.href='inbox.html'">Inbox</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Sent Items</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Draft</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Deleted Items</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Add Favorite</h1>
+  
+        <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 50px;">Archive</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Groups</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Junk</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">Conversation History</h1>
+        <h1 style="font-size: 10pt; margin-left: 20pt;">RSS Subscription</h1>
+      </div>
+      </div>
+      <script>
+        const sidebar = document.querySelector(".sidebar");
+        const btn = document.querySelector("#btn");
+        logo_img.onclick = function(){
+          if (!x.matches){
+            sidebar.classList.toggle('open');
+          }
+        }
+        btn.onclick = function(){
+          if (!x.matches){
+            sidebar.classList.remove('open');
+          }
+        }
+    
+        function myFunction(x) {
+          if (x.matches) {
+            sidebar.classList.remove('open');
+          } 
+        }
+  
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x)
+        x.addListener(myFunction) 
+  </script>
+     
+      <div class="compose" onclick="location.href='compose.html'">
+        <img class="comp" src="img/comp.svg">
+      </div>
+      </div>
+      <div class="dropdown">
+        <li><button class="dropbtn" onclick="myFunction()"><i class="material-icons">inbox</i></button></li>
+        <li><button class="dropbtn2" onclick="myFunction()"><i class="material-icons">arrow_forward</i></li>
+        <li><button class="dropbtn3" onclick="myFunction()"><i class="material-icons">edit</i></button></li>
+        <li><button class="dropbtn4" onclick="myFunction()"><i class="material-icons">add_circle_outline</i></li>
+      <div class="dropdown-content" id="myDropdown">      
+        <div class="mail">
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          <div id="surat" class="mailist">
+              <div class="pic"></div>
+              <div class="mailisi"></div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="preview">
+            <img class="mailimg" src="img/mail.svg">
+            <div class="prevtxt">Select an item to open</div>
+        </div>
+  
+         
+    <script>
+      function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+    </script>
+      
+  </body>
+  </html>

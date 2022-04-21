@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Outlook</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+  <body>
+      <div class="topnav">
+        <div class="outlook">OUTLOOK</div>
+        <div class="search">
+          <div class="searchtxt">Search</div>
+          
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img class="drpbt" src="img/tri.png"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <div class="isifilterkiri">
+                  <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 50px;">Search in</h1>
+                  <div class="linesputih"></div>
+                  <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 30px;">Form</h1>
+                  <div class="linesputih"></div>
+                  <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 30px;">Cc</h1>
+                  <div class="linesputih"></div>
+                  <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 30px;">Keyword</h1>
+                  <div class="linesputih"></div>
+                  <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 30px;">Attachments</h1>
+
+              </div>
+              <div class="isifilterkanan">
+                <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 50px;">To</h1>
+                <div class="linesputih"></div>
+                <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 30px;">Subject</h1>
+                <div class="linesputih"></div>
+                <h1 style="color: white; font-size: 13pt; margin-left: 20pt;margin-top: 30px;">Date From</h1>
+                <div class="linesputih"></div>
+                <button style="color: white; margin-top: 150px; margin-left: 30px; font-size: 15px; padding: 10px 70px; background-color: rgb(30, 15, 141); border-radius: 10px;">Search</button>
+                <button style="color: white; margin-top: 150px; margin-left: 30px; font-size: 15px; padding: 10px 70px; background-color: rgb(99, 180, 234); border-radius: 10px;">Clear Filters</button>
+
+              </div>
+
+
+          </div>
+          <div class="filticon">
+            
+          </div>
+        </div>
+        <div class="profile"></div>
+      </div>
+
+      <div class="content">
+        <img src="img/illus.webp" alt="illus">
+        <div class="textillus">
+          <div class="ti">Send your mail easily through OUTLOOK</div>
+          <div class="ti">Choose a menu to start.</div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo" id="logo_img">
+          <i class='bx bx-menu-alt-right' id="btn" ></i>
+        </div>
+    
+      <div class="sidebar.open">
+        <div class="profilecircle"></div>
+        <div class="listicon">
+          <h1 style="font-size: 15pt; margin-top: 20px; margin-left: 20pt;">ILLUSTRASI</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;">illustrasia@student.uph.edu</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 50px;"onclick="location.href='inbox.html'">Inbox</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px;">Sent Items</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">Draft</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">Deleted Items</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">Add Favorite</h1>
+    
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 50px;">Archive</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">Groups</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">Junk</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">Conversation History</h1>
+          <h1 style="font-size: 10pt; margin-left: 20pt;margin-top: 8px">RSS Subscription</h1>
+        </div>
+      </div>
+    
+      <script>
+        const sidebar = document.querySelector(".sidebar");
+        const btn = document.querySelector("#btn");
+        logo_img.onclick = function(){
+          if (!x.matches){
+            sidebar.classList.toggle('open');
+          }
+        }
+        btn.onclick = function(){
+          if (!x.matches){
+            sidebar.classList.remove('open');
+          }
+        }
+    
+        function myFunction(x) {
+          if (x.matches) {
+            sidebar.classList.remove('open');
+          } 
+        }
+
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x)
+        x.addListener(myFunction) 
+
+        
+      function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show");
+      } 
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+
+      <div class="compose" onclick="location.href='compose.html'">
+        <img class="comp" src="img/comp.svg">
+      </div>
+
+  </body>
+</html>

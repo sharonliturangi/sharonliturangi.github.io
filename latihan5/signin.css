@@ -1,0 +1,265 @@
+.nav-links li{
+    position: relative;
+    top : 40px;
+    width: 80px;
+    height: 45px;
+    margin-top: 40px;
+    background: linear-gradient(to top right, #93c0f3 29%, #99ccff 132%);
+    border-radius: 30% 30% 0 0;
+    display: inline-block;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}/* Left pake - agar "lengket" pada bagian kiri*/
+
+
+
+.inboximg{
+    margin-top: 12px;
+    margin-left: 24px;
+    width: 40%;
+   
+}
+
+.right-arrimg{
+    margin-top: 12px;
+    margin-left: 24px;
+    width: 40%;
+
+}
+
+.signatureimg{
+    margin-top: 12px;
+    margin-left: 24px;
+    width: 40%;
+ 
+}
+
+.trashimg{
+    margin-top: 12px;
+    margin-left: 24px;
+    width: 40%;
+
+
+}
+
+ul li:hover{
+ background: #99ccff;
+ box-shadow: black;
+}
+ul li:active{
+    background: #e2f1ff;
+    box-shadow: 4px 0px 8px 4px rgba(0,0,0,0.2);
+    
+   }
+
+
+/*signin*/
+.logoms {
+    position: absolute;
+    width: 192px;
+    height: 40px;
+    left: 360px;
+    top: 171px;
+}
+.micro-logo{
+    width: 170px;
+    height: 60px;
+    left: 360px;
+    top: 171px;
+}
+
+.kotaklogin {
+    position: absolute;
+    width: 667px;
+    height: 351px;
+    left: 360px;
+    top: 220px;
+    background: linear-gradient(333.47deg, #032EB7 -5.37%, #5A82FF 104.95%);
+    border-radius: 14px;
+}
+.signin {
+    position: absolute;
+    width: 75px;
+    height: 16px;
+    left: 64px;
+    top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.typebar{
+    position: absolute;
+    width: 498px;
+    height: 40px;
+    left: 64px;
+    top: 64px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.create{
+    position: absolute;
+    width: 301px;
+    height: 18px;
+    left: 80px;
+    top: 112px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.0312px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.next{
+    position: absolute;
+    width: 201px;
+    height: 32px;
+    left: 64px;
+    top: 200px;
+    background: #9BAFF1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+}
+.text{
+    padding-left: 88px;
+    padding-top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.option{
+    position: absolute;
+    width: 20px;
+    height: 200px;
+    left: 64px;
+    top: 232px;
+    background-color: pink;
+    display: block;
+}
+.icon{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    margin-left: 64px;
+    margin-top: 248px;
+    float: left;
+}
+.txt {
+    margin-left: 16px;
+    margin-top: 248px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    float: left;
+}
+.tou{
+    position: absolute;
+    width: 350px;
+    height: 18px;
+    left: 370px;
+    top: 580px;
+    background-color: transparent;
+}
+.button {
+    position: relative;
+    width: 96px;
+    height: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.0312px;
+    line-height: 14px;
+    color: #0E39C0;
+    float: left;
+}
+.mball{
+    position: relative;
+    width: 96px;
+    height: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 24px;
+    font-size: 12.0312px;
+    line-height: 14px;
+    color: #0E39C0;
+    float: left;
+}
+
+
+/*homepage*/
+.topnav{
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    background: linear-gradient(333.47deg, #032EB7 -5.37%, #5A82FF 104.95%);
+    border-radius: 14px;
+    z-index: 2;
+}
+
+.outlook{
+    position: relative;
+    width: 75px;
+    height: 16px;
+    left: 119px;
+    top: 22px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    float: left;
+}
+
+.search{
+    position: absolute;
+    width: 439px;
+    height: 40px;
+    left: 231px;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.searchtxt{
+    position: absolute;
+    width: 75px;
+    height: 16px;
+    left: 24px;
+    top: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.side-navv{
+    z-index: 1;
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 40px;
+}
